@@ -58,7 +58,7 @@ const Header = () => {
         className="app__header-circles"
       >
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
-          <div className="circles-cmp app__flex" key={circle.index}>
+          <div className="circles-cmp app__flex" key={index}>
             <img src={circle} alt={circle} />
           </div>
         ))}
