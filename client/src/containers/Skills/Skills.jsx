@@ -6,6 +6,7 @@ import ReactTooltip from "react-tooltip";
 import AppWrap from "../../wrapper/AppWrap";
 
 import "./Skills.scss";
+import MotionWrap from "../../wrapper/MotionWrap";
 
 const Skills = () => {
   const [experinces, setExperinces] = useState([]);
@@ -85,4 +86,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);
